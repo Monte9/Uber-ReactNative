@@ -4,7 +4,6 @@ import { ListView, View, Text, StyleSheet } from 'react-native'
 import SearchResultsRow from './SearchResultsRow'
 
 export default class SearchResultsList extends Component {
-
   render() {
     return null
   }

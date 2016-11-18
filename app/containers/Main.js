@@ -16,20 +16,23 @@ const mapStateToProps = (state) => ({
 })
 
 class Main extends Component {
-
   render() {
-    const {recentLocations, shortcutLocations} = this.props
+    const { recentLocations, shortcutLocations } = this.props
 
     return (
-      <View>
-
+      <View style={styles.mainView}>
+        <LocationSearchHeader
+          placeholder="Where to?"
+          onSubmitEditing={() =>{ console.log("Submit location search done")}}/>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-
+  mainView: {
+    backgroundColor: 'black',
+  }
 })
 
 export default connect(mapStateToProps)(Main)

@@ -12,7 +12,6 @@ const hitSlop = {
 }
 
 export default class NavigationIcon extends Component {
-
   render() {
     return null
   }
